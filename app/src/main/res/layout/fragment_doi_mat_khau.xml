@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragments.DoiMatKhauFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Cập nhật mật khẩu Thủ thư"
+           android:textSize="22sp"
+           android:textStyle="bold"/>
+       <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/edOldPassTT"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Mật khẩu cũ">
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"/>
+       </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/edNewPassTT"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Mật khẩu mới">
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"/>
+       </com.google.android.material.textfield.TextInputLayout>
+       
+       <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/edConfNewPassTT"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Nhập lại mật khẩu mới">
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"/>
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <ImageButton
+           android:id="@+id/btnPassClearAll"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:contentDescription="Clear all"
+           android:src="@drawable/ic_clear"
+           tools:ignore="TouchTargetSizeCheck" />
+       <Button
+           android:id="@+id/btnChangePass"
+           android:layout_gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Đổi mật khẩu"/>
+   </LinearLayout>
+
+</FrameLayout>
